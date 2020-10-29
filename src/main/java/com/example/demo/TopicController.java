@@ -16,8 +16,6 @@ public class TopicController {
 
     @RequestMapping("/topics")
     public List<Topic> getAllTopics(){
-        return Arrays.asList(new Topic("15258759672","Harry Potter","De"),
-                                new Topic("15247140593","赵祎明","cn"),
-                                 new Topic("15247135869","张慧敏","Inner Mongolia"));
+        return topicService.getAllTopics();
     }
 }
